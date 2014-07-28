@@ -21,7 +21,7 @@
             @include media-query($alias) {
 
                 // Whole.
-                [class~="#{$tree-widths-namespace}#{$alias}--1/1"]     { width: 100% !important; }
+                [class~="#{$tree-widths-namespace}#{$alias}-1/1"]     { width: 100% !important; }
 
                 // Halves.
                 [class~="#{$tree-widths-namespace}#{$alias}-1/2"],
