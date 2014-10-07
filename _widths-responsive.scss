@@ -97,13 +97,7 @@
 
     } // Close breakpoints loop.
 
-} // Close fractions @if.
-
-
-
-
-
-@else {
+} @else {
 
     @each $breakpoint in $breakpoints {
 
