@@ -5,7 +5,15 @@ module](https://github.com/treeframework/trumps.widths).
 
 Install using Bower:
 
-    $ bower install --save tree-widths-responsive
+```sh
+$ bower install tree-widths-responsive --save
+```
+
+Install using npm:
+
+```sh
+$ npm install tree-widths-responsive --save
+```
 
 `widths-responsive` will inherit the same settings used for `widths` (i.e.
 namespaces and fraction vs. spoken-word format).
