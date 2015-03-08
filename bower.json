@@ -1,7 +1,7 @@
 {
   "name": "tree-widths-responsive",
   "homepage": "https://github.com/treeframework/trump.widths-responsive",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "author": "Ilia Kolev <info@iliakolev.com>",
   "description": "Responsively controlled width classes.",
   "main": "_trump.widths-responsive.scss",
@@ -13,8 +13,9 @@
   "license": "MIT",
   "dependencies": {
     "tree-defaults": "~0.2.5",
-    "tree-responsive-settings": "~0.1.2",
+    "tree-responsive-settings": "~0.1.4",
     "tree-responsive-tools": "~0.1.4",
-    "tree-widths": "~0.2.6"
+    "tree-widths": "~0.3.0",
+    "tree-widths-tools": "~0.1.0"
   }
 }
