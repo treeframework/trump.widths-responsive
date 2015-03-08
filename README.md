@@ -30,6 +30,10 @@ $ bower install tree-widths-responsive --save
 
 Once installed, `@import` into your project in its Trump layer:
 
+```scss
+@import "bower_components/tree-widths-responsive/trump.widths-responsive";
+```
+
 ### Install using npm:
 
 ```sh
