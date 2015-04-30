@@ -1,10 +1,12 @@
-// *************************************
+// =============================================================================
 //
-//   #WIDTHS-RESPONSIVE
+// Name:          Widths-responsive
 //
-// *************************************
-
-// Responsive width classes based on your responsive settings.
+// Description:   Loops through the breakpoints defined in `settings.responsive`
+//                to generate prefixed breakpoint-based classes like
+//                `u-1/4-lap-and-up`, or `u-1-of-2-desk`, etc.
+//
+// =============================================================================
 
 
 
@@ -12,6 +14,7 @@
 
 // By default we will create wholes, halves, thirds, quarters, and fifths.
 // Predefine this Map to override.
+
 $tree-widths-columns-responsive: (
     1,
     2,
@@ -20,21 +23,24 @@ $tree-widths-columns-responsive: (
     5,
 ) !default;
 
+
+
+
+
 // Loop over our breakpoints defined in _settings.responsive.scss
 @each $breakpoint in $breakpoints {
 
-  // Get the name of the breakpoint.
-  $alias: nth($breakpoint, 1);
+    // Get the name of the breakpoint.
+    $alias: nth($breakpoint, 1);
 
-  @include media-query($alias) {
+    @include media-query($alias) {
 
-    // Loop through each of our column sizes and generate its responsive width
-    // classes.
-    @each $tree-widths-column in $tree-widths-columns-responsive {
-      @include tree-widths($tree-widths-column, -#{$alias});
+        // Loop through each of our column sizes and generate its responsive 
+        // width classes.
+        @each $tree-widths-column in $tree-widths-columns-responsive {
+            @include tree-widths($tree-widths-column, -#{$alias});
+        }
+
     }
 
-  }
-
 }
-
